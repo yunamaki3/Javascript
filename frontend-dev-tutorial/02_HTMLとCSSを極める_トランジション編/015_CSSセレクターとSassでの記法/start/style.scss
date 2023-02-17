@@ -1,0 +1,16 @@
+.parent{
+  color: blue;
+
+  & > .element {
+    //parentの一個下の階層のelementにのみ反映
+    color: purple;
+    //.elementかつ.second-childのみ反映
+    &.second-child{
+      color: black;
+    }
+  }
+}
+
+.element{
+  color: red;
+}

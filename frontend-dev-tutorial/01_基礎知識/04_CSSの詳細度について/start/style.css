@@ -1,0 +1,24 @@
+.parent { 
+  color: blue;
+  font-weight: 600;
+}
+
+span { 
+  color: purple;
+}
+
+.cls {
+  color: orange;
+}
+
+#first {
+  color: magenta;
+}
+
+/* 要素の詳細度はid>parent_tag>class>tag>parent */
+/* 同じ詳細度の場合、後に書かれたものが詳細度高とみなされる */
+
+.parent span {
+  /* class=parentの子要素であるspanにのみ反映される記述方法 */
+  color: red;
+}
